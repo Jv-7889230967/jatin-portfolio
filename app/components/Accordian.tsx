@@ -42,7 +42,7 @@ const Accordian = ({ tabName }: Props) => {
           </>
         ) : (
           <>
-            <p className='experience-p'>1. CHITKARA UNIVERSITY - Bachelor of Engineering<br />Grade: 9.49</p>
+            <p className='experience-p'>1. CHITKARA UNIVERSITY - Bachelor&apos;s of Engineering<br />Grade: 9.49</p>
             <p className='experience-p'>2. Bal Niketan Sr Sec School - 12th<br />Score: 70%</p>
           </>
         )}
