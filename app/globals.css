@@ -11,23 +11,104 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 1, 1, 1;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(white))) rgb(var(white));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+  .navbar {
+    @apply z-20 fixed top-0 flex bg-white justify-end items-center min-h-[5rem] max-h-fit w-screen;
+  }
+
+  .nav-items {
+    @apply flex flex-row items-center justify-evenly h-full w-[45%] mr-[10px];
+  }
+
+  .small-nav-items {
+    @apply flex flex-col justify-center items-center gap-2 h-full w-[100%];
+  }
+
+  .nav-items a,
+  .small-nav-items a {
+    @apply text-black font-medium no-underline hover:underline decoration-2;
+  }
+
+  .profiles-image {
+    @apply cursor-pointer transition ease-in-out duration-300 hover:scale-105;
+  }
+
+  .about-container {
+    @apply flex flex-row items-center justify-center h-screen w-screen;
+  }
+
+  .small-about-container {
+    @apply flex flex-col items-center justify-center h-screen w-screen;
+  }
+
+  .profile-links {
+    @apply flex flex-col justify-evenly w-[6rem] h-[25rem];
+  }
+
+  .small-profile-links {
+    @apply flex flex-row justify-evenly w-full h-[6rem];
+  }
+
+  .name-container {
+    @apply flex flex-row items-center justify-around w-[57rem] h-[28rem];
+  }
+
+  .small-name-container {
+    @apply flex flex-row items-center w-[full] h-[30rem];
+  }
+
+  .small-skill-container {
+    @apply flex flex-col items-center h-[9rem] w-full;
+  }
+
+  .skill-container {
+    @apply flex flex-row items-center h-[9rem] w-full gap-[5rem];
+  }
+
+  .parent-container {
+    @apply max-h-fit w-screen flex flex-col items-center gap-[6rem];
+  }
+
+  .accordian-container {
+    @apply flex flex-col justify-evenly max-h-full w-[85%];
+  }
+  .experience-p
+  {
+    @apply text-slate-400 italic;
+  }
+
+  @screen sm {
+    .accordian-container {
+      @apply flex-row;
+    }
+  }
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
