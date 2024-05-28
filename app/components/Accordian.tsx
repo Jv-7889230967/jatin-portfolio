@@ -30,20 +30,20 @@ const Accordian = ({ tabName }: Props) => {
         {tabName === 'Work' ? (
           <>
             <p className='experience-p'>
-              1. WNS Global Services<br />
-              At WNS, I worked as a technical intern in MERN stack and developed robust and responsive UI for better user and applied my technical knowledge in a Logistics project which able to handle big shipments and always try to implement best coding practices and was involved in API testing and development<br />
-              Tenure: 15 June 2022 - 15 Feb 2023
+              {`1. WNS Global Services`}<br />
+              {`At WNS, I worked as a technical intern in MERN stack and developed robust and responsive UI for better user and applied my technical knowledge in a Logistics project which able to handle big shipments and always try to implement best coding practices and was involved in API testing and development`}<br />
+              {`Tenure: 15 June 2022 - 15 Feb 2023`}
             </p>
             <p className='experience-p'>
-              2. Techolution Pvt Ltd<br />
-              At Techolution, I was involved in working as a frontend developer creating optimized and responsive UI using technologies like Next.js, React.js, JavaScript, HTML, CSS, etc., and used better state management hooks and libraries for better data management and development.<br/>
-              Tenure:19 Oct-19 April 2024
+              {`2. Techolution Pvt Ltd`}<br />
+              {`At Techolution, I was involved in working as a frontend developer creating optimized and responsive UI using technologies like Next.js, React.js, JavaScript, HTML, CSS, etc., and used better state management hooks and libraries for better data management and development.`}<br/>
+              {`Tenure:19 Oct-19 April 2024`}
             </p>
           </>
         ) : (
           <>
-           <p className='experience-p'>1. CHITKARA UNIVERSITY - Bachelor&#39;s of Engineering<br />Grade: 9.49</p>
-            <p className='experience-p'>2. Bal Niketan Sr Sec School - 12th<br />Score: 70%</p>
+           <p className='experience-p'>{`1. CHITKARA UNIVERSITY - Bachelor&#39;s of Engineering`}<br />{`Grade: 9.49`}</p>
+            <p className='experience-p'>{`2. Bal Niketan Sr Sec School - 12th`}<br />{`Score: 70%`}</p>
           </>
         )}
       </div>
